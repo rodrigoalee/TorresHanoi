@@ -9,14 +9,14 @@ class PanelHanoi extends JPanel {
     private int[][] estadoTorres;
     private int torreOrigen = -1; 
     private int discoSeleccionado = -1; 
-    private TorresHanoi hanoiGUI;
+    private TorresHanoi hanoi;
     private Color[] coloresDiscos; 
     private int tiempo;
 
-    public PanelHanoi(int torres, int discos, TorresHanoi hanoiGUI, int tiempo) {
+    public PanelHanoi(int torres, int discos, TorresHanoi hanoi, int tiempo) {
         this.torres = torres;
         this.discos = discos;
-        this.hanoiGUI = hanoiGUI;
+        this.hanoi = hanoi;
         this.tiempo = tiempo;
         this.estadoTorres = new int[torres][discos];
         this.coloresDiscos = generarColoresDiscos(); 
